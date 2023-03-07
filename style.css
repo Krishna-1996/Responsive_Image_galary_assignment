@@ -1,0 +1,37 @@
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vw;
+
+  grid-gap: 10px;
+}
+.gallary-item {
+  background-color: black;
+}
+
+.gallary-item img {
+  transition: all ease-in-out 500ms;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallary-item:hover {
+  transform: scale(0.95);
+  opacity: 0.5;
+}
+
+.gallary-item-3 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+.gallary-item-4 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.gallary-item-8 {
+  grid-column: 2 / 4;
+}
